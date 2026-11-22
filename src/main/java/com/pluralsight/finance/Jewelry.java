@@ -6,10 +6,9 @@ public class Jewelry extends FixedAsset {
     private double karat;
 
 
-    public Jewelry(String description, String dateAcquired, BigDecimal originalCost, String address, int condition, int squareFoot, int lotSize) {
+    public Jewelry(String description, String dateAcquired, BigDecimal originalCost, double karat) {
         super(description, dateAcquired, originalCost);
         this.karat = karat;
-        this.condition = checkedCondition(condition);
     }
 
 
